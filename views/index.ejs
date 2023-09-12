@@ -2,12 +2,11 @@
     <ul id="contain">
     <% contacts.forEach((contact, index) => { %>
         <li>
-            <p>Name: <%= contact.name %></p>
-            <!-- <p>Email: <%= contact.email %></p>
-            <p>Phone: <%= contact.phone %></p> -->
-            <a href="/edit/<%= index %>">Edit</a>
-            <a href="/view/<%= index %>">View</a>
-            <a href="/delete/<%= index %>">Delete</a>
+            <p>Name: <%= contact.name %> 
+                <a href="/edit/<%= index %>">Edit</a>
+                <a href="/view/<%= index %>">View</a>
+                <a href="/delete/<%= index %>">Delete</a>
+            </p>
         </li>
     <% }) %>
     </ul>
