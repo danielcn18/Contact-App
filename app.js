@@ -57,7 +57,7 @@ app.get('/view/:id', (req, res) => {
     let id = req.params.id;
     const contact = contacts[id];
     res.render('view', {contact});
-})
+});
 
 app.get('/delete/:id', (req, res) => {
     const id = req.params.id;

@@ -24,11 +24,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 async function readContactsFile(){
     const data = await fs.readFile('./data/contacts.json', 'utf8');
     return JSON.parse(data);
-}
+};
 
 async function writeContactsFile(contacts){
     await fs.writeFile('./data/contacts.json', JSON.stringify(contacts));
-}
+};
 
 /* let contacts = JSON.parse(fs.readFileSync('./data/contacts.json', 'utf8'));
 let datajson = require('./data/contacts.json'); */
