@@ -40,13 +40,6 @@ app.post('/add', (req, res) => {
     res.redirect('add');
 });
 
-/* app.get('/edit/:index', (req, res) => {
-    const contactIndex = req.params.index;
-    const contact = contacts.find(contact => contacts.indexOf(contact) == contactIndex);
-    if(contact) res.render('edit', { contact });
-    else res.status(404).json({ message: 'Contact not found' });
-}); */
-
 app.get('/edit/:id', (req, res) => {
     let id = req.params.id;
     const contact = contacts[id];
