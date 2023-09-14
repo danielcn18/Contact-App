@@ -8,6 +8,7 @@ I made this app using Express.JS. The idea of this app is to show a list of cont
 * Windows 10
 * Express
 * EJS
+* Nodemon (optionally)
 * Body parser
 * Node.js
 
@@ -25,7 +26,7 @@ npm install express fs ejs nodemon body-parser --save
 ```
 node app
 ```
-or 
+or, if using nodemon:
 ```
 npx nodemon app
 ```
